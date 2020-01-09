@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages  {
         
-        stage("检出") {
+        stage("检出 master") {
             steps {
                 checkout(
                     [$class: 'GitSCM', branches: [[name: env.GIT_BUILD_REF]], 
